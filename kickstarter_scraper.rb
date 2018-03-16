@@ -8,7 +8,8 @@ def create_project_hash
   projects = {}
   
   kickstarted.css("li.project.grid_4").each do |project|
-    projects[project] = {}
+    title = project.css("h2.bbcard_name strong a").text
+    projects[titel.to_sym] = {}
   end
   
   projects
